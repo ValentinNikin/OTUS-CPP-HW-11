@@ -13,6 +13,6 @@ set(CPACK_THREADS 8)
 
 set(CPACK_GENERATOR "DEB")
 set(CPACK_DEBIAN_PACKAGE_SECTION "utils")
-set(CPACK_DEBIAN_PACKAGE_DEPENDS "libsqlite3-0 >= 3.34.1")
+set(CPACK_DEBIAN_PACKAGE_DEPENDS "libsqlite3-0 (>= 3.34.1-3)")
 
 include(CPack)
