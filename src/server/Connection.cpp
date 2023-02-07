@@ -51,7 +51,7 @@ void Connection::writeToSocket(const std::vector<std::string>& response) {
             return boost::asio::buffer(r);
         });
 
-    _socket.async_write_some(buffers, [this, self](boost::system::error_code ec, std::size_t length) {
+    _socket.async_write_some(buffers, [this, self](boost::system::error_code ec, std::size_t) {
         if (ec) {
             std::cout << "Problem occurred while writing to socket: " << ec.message() << std::endl;
         }
